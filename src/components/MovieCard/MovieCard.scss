@@ -1,0 +1,52 @@
+@import "../../common/colors.scss";
+
+a{
+  color: $font-primary
+}
+
+.movieCard-container {
+  padding: 2em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.movieCard-container:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.movieCard-img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  height: 400px;
+  object-fit: cover;
+}

@@ -1,0 +1,103 @@
+@import "../../common/colors.scss";
+
+.movie-wrapper {
+  color: $font-primary;
+  margin: 2em 1em;
+}
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.movie-container,
+.shows-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+.name-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.search{
+  width: 100%;
+  // border: 2px solid white;
+  display: flex;
+  gap: 20em;
+  align-items: center;
+}
+.search-input-div{
+  position: relative;
+}
+.search-icon{
+  cursor: pointer;
+  color: $font-primary;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.search-input{
+  color: $font-primary;
+  background-color: $primary-color;
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+
+.down-arrow {
+  font-size: 1.5rem;
+  animation: upDown 2s infinite;
+  -webkit-animation: upDown 2s infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-0.15em);
+    -webkit-transform: translateY(-0.15em);
+    -moz-transform: translateY(-0.15em);
+    -ms-transform: translateY(-0.15em);
+    -o-transform: translateY(-0.15em);
+}
+  20% {
+    transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
+}
+  70% {
+    transform: translateY(0.15em);
+    -webkit-transform: translateY(0.15em);
+    -moz-transform: translateY(0.15em);
+    -ms-transform: translateY(0.15em);
+    -o-transform: translateY(0.15em);
+}
+  100% {
+    transform: translateY(-0.15em);
+    -webkit-transform: translateY(-0.15em);
+    -moz-transform: translateY(-0.15em);
+    -ms-transform: translateY(-0.15em);
+    -o-transform: translateY(-0.15em);
+}
+}

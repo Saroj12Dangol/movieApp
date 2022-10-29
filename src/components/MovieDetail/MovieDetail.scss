@@ -1,0 +1,62 @@
+@import "../../common/colors.scss";
+
+
+.detail-container{
+    color: $font-primary;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+    // height: 100vh;
+}
+
+.detail-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 50%;
+}
+.detail-title{
+    font-size: 2rem;
+}
+.star{
+    color: gold;
+}
+.ratings-div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.9rem;
+    color: $font-secondary;
+}
+.ratings, .votes, .runtime, .year{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.biCamera, .like-icon, .bsCalendar{
+    color: $font-primary;
+}
+
+.information{
+    display: flex;
+    gap: 2em;
+}
+.info-title, .info-title-names{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.info-title span{
+    font-weight: bold;
+}
+.info-title-names{
+    color: $font-secondary;
+}
+
+.detail-img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
